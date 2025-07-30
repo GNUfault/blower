@@ -7,7 +7,7 @@ GNOME ThinkPad Fan Speed Controller
 
 ### Dependencies 
 ```
-policykit-1 git libadwaita-1-dev libgtk-4-dev build-essential
+git build-essential libadwaita-1-dev libgtk-4-dev policykit-1 lm-sensors  
 ```
 
 ### Cloning
