@@ -1,0 +1,27 @@
+# Blower
+GNOME ThinkPad Fan Speed Controller
+
+<img width="482" height="704" alt="demo" src="https://github.com/user-attachments/assets/5058daae-89fe-44b7-a55d-302492c2f964" />
+
+## Install
+
+### Dependencies 
+```
+policykit-1 git libadwaita-1-dev libgtk-4-dev build-essential
+```
+
+### Cloning
+```
+git clone https://github.com/bluMATRIKZ/blower.git && cd blower
+```
+
+### Compiling
+```
+make
+```
+
+### Running
+Click on the Blower icon or run:
+```
+blower
+```
