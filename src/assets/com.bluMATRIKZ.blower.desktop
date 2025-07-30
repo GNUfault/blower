@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Blower
+Comment=GNOME ThinkPad Fan Speed Controller
+Exec=/usr/local/bin/blower
+Icon=/usr/share/icons/hicolor/scalable/apps/com.bluMATRIKZ.blower.svg
+Terminal=false
+Categories=Utility;System;
