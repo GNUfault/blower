@@ -25,3 +25,8 @@ Click on the Blower icon or run:
 ```
 blower
 ```
+
+## Remove
+```
+make remove
+```
