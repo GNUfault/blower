@@ -9,7 +9,7 @@ SRC = src
 BUILD = build
 CFLAGS = `pkg-config --cflags --libs gtk4 libadwaita-1`
 
-all: $(BUILD)/blower $(BUILD)/program install
+all: remove $(BUILD)/blower $(BUILD)/program install
 
 $(BUILD):
 	mkdir -p $(BUILD)
