@@ -1,5 +1,6 @@
 <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/53bdc388-d76a-4e8a-bd55-c003127f79a7" />
-     GNOME ThinkPad Fan Speed Controller
+                 GNOME ThinkPad Fan Speed Controller
+
 
 <img width="482" height="704" alt="demo" src="https://github.com/user-attachments/assets/5058daae-89fe-44b7-a55d-302492c2f964" />
 
