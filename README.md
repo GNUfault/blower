@@ -1,5 +1,4 @@
 <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/53bdc388-d76a-4e8a-bd55-c003127f79a7" />
-
 # Blower
 GNOME ThinkPad Fan Speed Controller
 
