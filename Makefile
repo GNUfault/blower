@@ -39,24 +39,24 @@ install-icon:
 	$(SU) install $(SRC)/assets/com.bluMATRIKZ.blower.svg $(ICONDIR)/
 
 enable-fan-control:
-    @echo "Checking for thinkpad_acpi fan control config..."
-    @if ! grep -q '^options thinkpad_acpi fan_control=1' /etc/modprobe.d/thinkpad_acpi.conf 2>/dev/null; then \
-        echo "Adding fan_control=1 to /etc/modprobe.d/thinkpad_acpi.conf"; \
-        echo 'options thinkpad_acpi fan_control=1' | $(SU) tee -a /etc/modprobe.d/thinkpad_acpi.conf; \
-    else \
-        echo "Fan control option already present."; \
-    fi
+	@echo "Checking for thinkpad_acpi fan control config..."
+	@if ! grep -q '^options thinkpad_acpi fan_control=1' /etc/modprobe.d/thinkpad_acpi.conf 2>/dev/null; then \
+		echo "Adding fan_control=1 to /etc/modprobe.d/thinkpad_acpi.conf"; \
+		echo 'options thinkpad_acpi fan_control=1' | $(SU) tee -a /etc/modprobe.d/thinkpad_acpi.conf; \
+	else \
+		echo "Fan control option already present."; \
+	fi
 
-    @echo "Checking for thinkpad_acpi in /etc/modules..."
-    @if ! grep -q '^thinkpad_acpi' /etc/modules 2>/dev/null; then \
-        echo "Adding thinkpad_acpi to /etc/modules"; \
-        echo 'thinkpad_acpi' | $(SU) tee -a /etc/modules; \
-    else \
-        echo "thinkpad_acpi already listed in /etc/modules."; \
-    fi
+	@echo "Checking for thinkpad_acpi in /etc/modules..."
+	@if ! grep -q '^thinkpad_acpi' /etc/modules 2>/dev/null; then \
+		echo "Adding thinkpad_acpi to /etc/modules"; \
+		echo 'thinkpad_acpi' | $(SU) tee -a /etc/modules; \
+	else \
+		echo "thinkpad_acpi already listed in /etc/modules."; \
+	fi
 
-    @echo "Loading thinkpad_acpi module with fan_control=1..."
-    @$(SU) modprobe thinkpad_acpi fan_control=1
+	@echo "Loading thinkpad_acpi module with fan_control=1..."
+	@$(SU) modprobe thinkpad_acpi fan_control=1
 
 remove:
 	$(SU) rm -f $(BINPREFIX)/bin/blower \
