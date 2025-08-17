@@ -9,7 +9,7 @@ SRC = src
 BUILD = build
 CFLAGS = `pkg-config --cflags --libs gtk4 libadwaita-1`
 
-all: remove enable-fan-control $(BUILD)/blower $(BUILD)/program install
+all: remove enable-fan-control $(BUILD)/blower $(BUILD)/program install done-msg
 
 $(BUILD):
 	mkdir -p $(BUILD)
@@ -67,3 +67,6 @@ remove:
 clean:
 	rm -f $(BUILD)/blower $(BUILD)/program
 
+done-msg:
+	@echo
+	@echo "Done! Now run "blower" to run Blower."
