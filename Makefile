@@ -69,4 +69,4 @@ clean:
 
 done-msg:
 	@echo
-	@echo "Done! Now run `blower` to run Blower."
+	@echo "Done! Now run blower to run Blower."
