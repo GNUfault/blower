@@ -15,7 +15,7 @@ git build-essential libadwaita-1-dev libgtk-4-dev policykit-1 lm-sensors
 
 ### Cloning
 ```
-git clone https://github.com/bluMATRIKZ/blower.git && cd blower
+git clone https://github.com/GNUfault/blower.git && cd blower
 ```
 
 ### Compiling
