@@ -7,7 +7,7 @@ GNOME ThinkPad Fan Speed Controller
 <img width="482" height="704" alt="demo" src="https://github.com/user-attachments/assets/5058daae-89fe-44b7-a55d-302492c2f964" />
 
 ## NOTE!
-For now you will need to enable `thinkpad_acpi` here's how to do it
+For now you will need to enable `thinkpad_acpi` by yourself, here's how to do it:
 
 1. Load it:
 ```bash
